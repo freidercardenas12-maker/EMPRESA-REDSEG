@@ -2664,6 +2664,17 @@ body::before {
   .impact__line { font-size: clamp(2.15rem, 9vw, 2.8rem); max-width: 14ch; }
 }
 
+.bg-video {
+  top: -6%;
+  bottom: auto;
+  height: 112%;
+  object-position: center 58%;
+}
+.poster {
+  background-position: center 58%;
+  background-size: cover;
+}
+
 @media (min-width: 721px) {
   .band--left .band__inner { max-width: 11ch; }
   .band--left .hero-title {
