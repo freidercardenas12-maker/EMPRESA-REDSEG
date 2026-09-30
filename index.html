@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REDSEG | Empresa de vigilancia</title>
+  <meta name="description" content="Vigilancia física, monitoreo 24 horas y respuesta inmediata. REDSEG protege puestos, personas e instalaciones.">
+  <meta name="theme-color" content="#0c1020">
+  <!-- DEPLOY STEP: live URL -->
+  <meta property="og:title" content="REDSEG | Empresa de vigilancia">
+  <meta property="og:description" content="Vigilancia física, monitoreo 24 horas y respuesta inmediata. REDSEG protege puestos, personas e instalaciones.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:url" content="https://freidercardenas12-maker.github.io/EMPRESA-REDSEG/">
+  <meta property="og:image" content="https://freidercardenas12-maker.github.io/EMPRESA-REDSEG/assets/hero-ending.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23c8102e' d='M16 2l11 5v8c0 7.2-6.2 12.4-11 15-4.8-2.6-11-7.8-11-15V7z'/%3E%3Ctext x='16' y='20' text-anchor='middle' font-family='Georgia' font-size='9' font-weight='700' fill='white'%3ERS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Zilla+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="thread" aria-hidden="true"><i></i></div>
+
+  <header class="site-header">
+    <a class="brand" href="#main">
+      <img src="assets/logo.jpg" width="86" height="98" alt="Escudo REDSEG, empresa de vigilancia.">
+      <span>
+        <span class="brand__name">REDSEG</span>
+        <span class="brand__slogan">Vigilancia que protege lo que importa</span>
+      </span>
+    </a>
+    <p class="live live--header"><i></i> Central activa</p>
+    <nav id="nav-panel" class="nav-links" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#talento">Trabaje</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn--primary nav-cta" href="#contacto">Solicitar cotización</a>
+    </nav>
+    <a class="btn btn--primary header-cta" href="#contacto">Solicitar cotización</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
+      <span class="sr-only">Abrir menú</span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <h1 class="sr-only">Vigilancia que nunca baja la guardia</h1>
+
+    <section class="hero" id="hero" aria-label="Recorrido REDSEG">
+      <div class="stage">
+        <video id="hero-video" class="bg-video" muted playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+        <div class="poster" aria-hidden="true"></div>
+        <div class="scrim" aria-hidden="true"></div>
+
+        <div class="band band--left" data-a="0" data-b="0.27" data-entrance="approach" data-scrim="left">
+          <div class="band__inner">
+            <p class="kicker">REDSEG</p>
+            <p class="hero-title">La guardia no se baja.</p>
+            <p class="sub">Empresa de vigilancia.</p>
+            <p class="cue">Desplace para avanzar</p>
+          </div>
+        </div>
+
+        <div class="band band--bottom" data-a="0.25" data-b="0.52" data-ramp="0.07" data-entrance="focus" data-scrim="bottom">
+          <div class="band__inner">
+            <p class="hero-title">Un ojo que no parpadea.</p>
+            <p class="sub">El puesto tiene gente. Esa gente tiene supervisión.</p>
+          </div>
+        </div>
+
+        <div class="band band--top" data-a="0.50" data-b="0.77" data-ramp="0.07" data-entrance="weave" data-scrim="top">
+          <div class="band__inner">
+            <p class="hero-title">La ciudad, bajo vigilancia.</p>
+            <p class="sub">Monitoreo, perímetro y reacción cuando el puesto lo pide.</p>
+          </div>
+        </div>
+
+        <div class="band band--settle" data-settle data-a="0.75" data-b="1" data-entrance="rise" data-scrim="settle" data-ramp="0.08">
+          <div class="band__inner">
+            <p class="kicker">REDSEG · Empresa de vigilancia</p>
+            <p class="hero-title">Vigilancia que nunca baja la guardia.</p>
+            <p class="sub">Seguridad física, monitoreo y respuesta inmediata para proteger lo que más valora, las 24 horas del día.</p>
+            <div class="cta-row">
+              <a class="btn btn--primary" href="#contacto">Solicitar cotización</a>
+              <a class="btn btn--ghost" href="#servicios">Conocer servicios</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-label="Servicios de REDSEG">
+      <div class="marquee__move">
+        <div class="marquee__track">
+          <span class="marquee__item">REDSEG</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Vigilancia fija</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Vigilancia móvil</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Medios tecnológicos</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Escoltas</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Vigilancia canina</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Personal capacitado</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Atención 24/7</span><span class="marquee__dot"></span>
+        </div>
+        <div class="marquee__track" aria-hidden="true">
+          <span class="marquee__item">REDSEG</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Vigilancia fija</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Vigilancia móvil</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Medios tecnológicos</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Escoltas</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Vigilancia canina</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Personal capacitado</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Atención 24/7</span><span class="marquee__dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="impact" id="impacto" aria-label="La promesa">
+      <div class="impact__pin">
+        <div class="impact__copy">
+          <p class="kicker">La promesa</p>
+          <p class="impact__line">El puesto sigue cubierto cuando usted ya se fue a dormir.</p>
+          <p class="impact__meta"><span class="live"><i></i></span> Turno de noche</p>
+        </div>
+        <svg class="impact-shield" viewBox="0 0 120 132" aria-hidden="true">
+          <path class="impact-track" d="M60 8 L104 28 V68 C104 98 60 124 60 124 C60 124 16 98 16 68 V28 Z"/>
+          <path class="impact-draw" pathLength="1" d="M60 8 L104 28 V68 C104 98 60 124 60 124 C60 124 16 98 16 68 V28 Z"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section paper" id="servicios">
+      <div class="film-board">
+      <div class="services__head reveal">
+        <p class="kicker part">Servicios</p>
+        <h2 class="part">Cuatro modalidades autorizadas.</h2>
+        <p class="lede part">Las del estatuto de vigilancia. Personal capacitado. Nada de esto es conserjería.</p>
+      </div>
+      <div class="service-grid reveal">
+        <article class="service-card part">
+          <span class="shield-ico" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M16 4l9 4v8c0 6-5 10-9 12-4-2-9-6-9-12V8z"/></svg>
+          </span>
+          <p class="card-idx">01</p>
+          <h3>Vigilancia fija y móvil</h3>
+          <p>Personal uniformado y capacitado en puestos residenciales, comerciales e industriales. El puesto no se abandona.</p>
+          <ul>
+            <li>Puesto fijo</li>
+            <li>Rondas y vigilancia móvil</li>
+            <li>Supervisión del turno en campo</li>
+          </ul>
+        </article>
+        <article class="service-card part">
+          <span class="shield-ico" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="4"/><path d="M5 16s4-7 11-7 11 7 11 7-4 7-11 7S5 16 5 16z"/></svg>
+          </span>
+          <p class="card-idx">02</p>
+          <h3>Medios tecnológicos</h3>
+          <p>Alarmas, CCTV, controles de acceso y analítica de video, registrados como medio tecnológico. Hay alguien del otro lado.</p>
+          <ul>
+            <li>Central que no cierra</li>
+            <li>Reacción cuando la señal cambia</li>
+            <li>Registro ante la Superintendencia</li>
+          </ul>
+        </article>
+        <article class="service-card part">
+          <span class="shield-ico" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><circle cx="8" cy="22" r="2.4"/><circle cx="24" cy="10" r="2.4"/><path d="M10.5 20.5C14 16 18 14 21.5 12"/></svg>
+          </span>
+          <p class="card-idx">03</p>
+          <h3>Escoltas</h3>
+          <p>Protección de personas, mercancías o vehículos en desplazamiento. Con protocolo de ruta.</p>
+          <ul>
+            <li>Acompañamiento personal</li>
+            <li>Custodia de carga</li>
+            <li>Traslados con hora y destino</li>
+          </ul>
+        </article>
+        <article class="service-card part">
+          <span class="shield-ico" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><rect x="5" y="9" width="16" height="12" rx="1.5"/><path d="M21 14l6-3v10l-6-3z"/></svg>
+          </span>
+          <p class="card-idx">04</p>
+          <h3>Vigilancia canina</h3>
+          <p>Apoyo con caninos adiestrados, dentro del mismo esquema de vigilancia. No es un servicio aparte ni improvisado.</p>
+          <ul>
+            <li>Canino con guía</li>
+            <li>Apoyo al puesto fijo</li>
+            <li>Apoyo en ronda</li>
+          </ul>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section class="section quotes" id="situaciones" aria-roledescription="carrusel" aria-label="Situaciones que llegan antes del contrato">
+      <div class="quotes__head">
+        <p class="kicker">Antes del contrato</p>
+        <h2>Tres frases que ya conocemos.</h2>
+      </div>
+      <div class="quotes__stage">
+        <article class="quote is-on">
+          <p class="quote__place">Acceso</p>
+          <blockquote>El guarda estaba. Nadie lo estaba mirando.</blockquote>
+        </article>
+        <article class="quote">
+          <p class="quote__place">Cámaras</p>
+          <blockquote>Las cámaras graban. Nadie responde.</blockquote>
+        </article>
+        <article class="quote">
+          <p class="quote__place">Turno de noche</p>
+          <blockquote>De noche, el teléfono no contesta.</blockquote>
+        </article>
+      </div>
+      <div class="quotes__bar">
+        <p class="quotes__note" id="quotes-note">REDSEG existe para cerrar esas frases.</p>
+        <div class="quotes__controls">
+          <button type="button" class="quote-btn" data-dir="-1" aria-label="Situación anterior">Anterior</button>
+          <button type="button" class="quote-btn" data-dir="1" aria-label="Situación siguiente">Siguiente</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts reveal" aria-label="Cómo opera REDSEG">
+      <ul>
+        <li class="part"><span class="num" data-count="4">4</span><span>líneas de servicio</span></li>
+        <li class="part"><span class="num" data-count="24">24</span><span>horas de turno</span></li>
+        <li class="part"><span class="num" data-count="7">7</span><span>días de cobertura</span></li>
+        <li class="part"><span class="num" data-count="1">1</span><span>central de monitoreo</span></li>
+      </ul>
+    </section>
+
+    <section class="section paper about" id="nosotros">
+      <div class="about-grid">
+        <div class="reveal">
+          <p class="kicker part">La firma</p>
+          <h2 class="part">Presentes en el puesto. Presentes en la central.</h2>
+          <p class="manifesto part">REDSEG es una empresa de vigilancia privada. El personal sale de escuelas avaladas por la Superintendencia. Cubrimos el puesto, miramos la señal desde la central y respondemos cuando cambia. El estatuto exige a una empresa de este tipo un capital mínimo de 600 SMMLV y una póliza de responsabilidad civil de al menos 400 SMMLV.</p>
+          <figure class="seal part">
+            <img src="assets/logo.jpg" width="148" height="170" alt="">
+            <figcaption>Escudo oficial</figcaption>
+          </figure>
+        </div>
+        <div class="stack reveal">
+          <article class="part">
+            <h3>Misión</h3>
+            <p>Cuidar personas, bienes e instalaciones con vigilancia continua, personal capacitado y una respuesta clara, al servicio de la seguridad ciudadana y la convivencia.</p>
+          </article>
+          <article class="part">
+            <h3>Visión</h3>
+            <p>Ser la firma a la que un administrador llama porque el puesto, de noche, sigue cubierto.</p>
+          </article>
+          <div class="values part">
+            <div><strong>Vigilancia</strong><span>El ojo no se distrae del puesto.</span></div>
+            <div><strong>Integridad</strong><span>Lo que se informa es lo que ocurrió.</span></div>
+            <div><strong>Compromiso</strong><span>El turno se cumple entero.</span></div>
+            <div><strong>Respuesta</strong><span>La señal tiene quién actúe.</span></div>
+          </div>
+        </div>
+      </div>
+      <ul class="audience">
+        <li><i aria-hidden="true"></i><span>Administrador de propiedad horizontal</span></li>
+        <li><i aria-hidden="true"></i><span>Gerente de operaciones</span></li>
+        <li><i aria-hidden="true"></i><span>Dueño de negocio</span></li>
+      </ul>
+    </section>
+
+    <section class="section central" id="central" aria-labelledby="central-title">
+      <div class="motes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="reveal">
+        <p class="kicker part"><span class="live"><i></i></span> Centro de control</p>
+        <h2 id="central-title" class="part">La sala no cierra.</h2>
+        <p class="lede part">De este lado hay personas. Una cámara sola no actúa. Mantenga el escudo un momento: así se siente un puesto que no se suelta.</p>
+        <div class="guard" id="guard">
+          <div class="guard__stage">
+            <svg class="guard__shield" viewBox="0 0 120 132" aria-hidden="true">
+              <path class="guard__track" pathLength="1" d="M60 8 L104 28 V68 C104 98 60 124 60 124 C60 124 16 98 16 68 V28 Z"/>
+              <path class="guard__fill" pathLength="1" d="M60 8 L104 28 V68 C104 98 60 124 60 124 C60 124 16 98 16 68 V28 Z"/>
+            </svg>
+            <div class="guard__hit">
+              <button class="btn" type="button" id="guard-btn" aria-describedby="guard-hint">Mantener</button>
+            </div>
+          </div>
+          <p class="guard__hint" id="guard-hint">Mantenga pulsado para no bajar la guardia.</p>
+          <ul class="guard__result" aria-hidden="false">
+            <li>Señal activa</li>
+            <li>Puesto cubierto</li>
+            <li>Protocolo listo</li>
+          </ul>
+          <p class="sr-only" id="guard-status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section paper" id="cobertura">
+      <div class="reveal">
+        <p class="kicker part">Cobertura</p>
+        <h2 class="part">Donde hace falta un puesto, se arma el esquema.</h2>
+        <p class="lede part">La zona exacta se acuerda en la cotización. Estos son los sitios que cuidamos.</p>
+      </div>
+      <div class="plano reveal" id="plano">
+        <button type="button" class="zone is-on" aria-pressed="true" data-note="Accesos, parqueaderos y zonas comunes. Vigilancia privada, con personal capacitado. No es conserjería.">
+          <span class="pin" aria-hidden="true"></span>
+          <h3>Conjunto residencial</h3>
+          <p>Accesos, parqueaderos y zonas comunes.</p>
+        </button>
+        <button type="button" class="zone" aria-pressed="false" data-note="Lobby, sótanos y el turno que empieza cuando las oficinas cierran.">
+          <span class="pin" aria-hidden="true"></span>
+          <h3>Edificio corporativo</h3>
+          <p>Accesos, lobby y turnos de noche.</p>
+        </button>
+        <button type="button" class="zone" aria-pressed="false" data-note="Perímetro, muelles y la carga que no puede quedar sola entre un camión y el siguiente.">
+          <span class="pin" aria-hidden="true"></span>
+          <h3>Bodega y logística</h3>
+          <p>Perímetro, muelles y custodia de carga.</p>
+        </button>
+        <button type="button" class="zone" aria-pressed="false" data-note="Apertura, cierre y el horario en que el local cambia de manos.">
+          <span class="pin" aria-hidden="true"></span>
+          <h3>Comercio</h3>
+          <p>Locales, centros y horarios de cierre.</p>
+        </button>
+      </div>
+      <p class="zone-note" id="zone-note" aria-live="polite">Accesos, parqueaderos y zonas comunes. Vigilancia privada, con personal capacitado. No es conserjería.</p>
+    </section>
+
+    <section class="section sheet" id="por-que" aria-labelledby="porque-title">
+      <div class="reveal">
+        <p class="kicker part">La diferencia</p>
+        <h2 id="porque-title" class="part">Por qué el puesto se queda.</h2>
+      </div>
+      <div class="pillars-wrap reveal">
+      <svg class="spine" viewBox="0 0 100 2" preserveAspectRatio="none" aria-hidden="true">
+        <line class="draw" x1="0" y1="1" x2="100" y2="1" pathLength="1"/>
+      </svg>
+      <ol class="pillars">
+        <li class="part">
+          <span class="idx">01</span>
+          <div>
+            <h3>Personal capacitado</h3>
+            <p>Gente preparada para el tipo de sitio. No un uniforme improvisado.</p>
+          </div>
+        </li>
+        <li class="part">
+          <span class="idx">02</span>
+          <div>
+            <h3>Supervisión en campo</h3>
+            <p>El puesto se visita y se mira. El uniforme solo no alcanza.</p>
+          </div>
+        </li>
+        <li class="part">
+          <span class="idx">03</span>
+          <div>
+            <h3>Respuesta inmediata</h3>
+            <p>Cuando la central recibe la señal, el protocolo ya tiene dueño.</p>
+          </div>
+        </li>
+        <li class="part">
+          <span class="idx">04</span>
+          <div>
+            <h3>Tecnología aplicada</h3>
+            <p>CCTV, acceso y alarmas dentro del mismo esquema, no como adorno.</p>
+          </div>
+        </li>
+        <li class="part">
+          <span class="idx">05</span>
+          <div>
+            <h3>Cumplimiento</h3>
+            <p>Operamos como empresa de vigilancia ante la Superintendencia de Vigilancia y Seguridad Privada. El número de resolución y el alcance, nacional o regional, se publican en el pie de esta página cuando la firma los entregue.</p>
+          </div>
+        </li>
+      </ol>
+      </div>
+    </section>
+
+    <section class="section paper" id="preguntas" aria-labelledby="faq-title">
+      <div class="reveal">
+        <p class="kicker part">Preguntas</p>
+        <h2 id="faq-title" class="part">Lo que un administrador pregunta antes de firmar.</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>¿Y si el guarda se duerme?</summary>
+          <p>Por eso el puesto no queda solo. Hay supervisión en campo y una central que ve la señal.</p>
+        </details>
+        <details>
+          <summary>¿Quién contesta a las tres de la mañana?</summary>
+          <p>La central no cierra. El turno de la noche tiene el mismo protocolo que el del día.</p>
+        </details>
+        <details>
+          <summary>¿Están autorizados para prestar vigilancia?</summary>
+          <p>REDSEG opera como empresa de vigilancia. El número de resolución de la Superintendencia, y si la licencia es nacional o regional, se publica en el pie de esta página en cuanto la firma lo entregue.</p>
+        </details>
+        <details>
+          <summary>¿Puedo empezar con un puesto y crecer?</summary>
+          <p>Sí. El esquema se arma por puesto. Si el edificio suma accesos o turnos, se ajusta la cotización.</p>
+        </details>
+        <details>
+          <summary>¿Las cámaras reemplazan al guarda?</summary>
+          <p>No. La cámara muestra. La persona decide y actúa. Las dos cosas van juntas. Los medios tecnológicos se registran ante la Superintendencia.</p>
+        </details>
+        <details>
+          <summary>¿Esto es conserjería o portería?</summary>
+          <p>No. REDSEG presta vigilancia privada, fija o móvil, con personal capacitado. No ofrecemos conserjería ni la presentamos como vigilancia.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="marco" aria-labelledby="marco-title">
+      <p class="kicker">Marco legal</p>
+      <h2 id="marco-title">Las normas que rigen esta página.</h2>
+      <ol class="laws">
+        <li><strong>Decreto Ley 356 de 1994</strong><span>Estatuto de vigilancia. Modalidades de servicio, uniforme y póliza de responsabilidad civil.</span></li>
+        <li><strong>Ley 245 de 1995</strong><span>Licencia de funcionamiento. La vigencia puede llegar a diez años.</span></li>
+        <li><strong>Ley 1920 de 2018</strong><span>Jornada máxima de 12 horas al día y 60 a la semana. Seguro de vida colectivo para el personal operativo.</span></li>
+        <li><strong>Resolución 01764 de 2017</strong><span>Uso, instalación y registro de medios tecnológicos ante la Superintendencia.</span></li>
+        <li><strong>Ley 1581 de 2012</strong><span>Protección de datos. Ningún formulario sale sin su aceptación.</span></li>
+      </ol>
+    </section>
+
+    <section class="section" id="tarifas" aria-labelledby="tarifas-title">
+      <p class="kicker">Tarifa mínima</p>
+      <h2 id="tarifas-title">La cotización no baja del piso legal.</h2>
+      <p class="lede">Circular Externa 20251300000115CS. Costo mínimo de referencia para el esquema de 24 horas y 30 días, con el salario mínimo vigente.</p>
+      <ul class="rates">
+        <li><b>10%</b><span>Administración y supervisión. Con armas, o residencial de estratos 4 a 6.</span></li>
+        <li><b>8%</b><span>Servicios sin armas.</span></li>
+        <li><b>11%</b><span>Servicios con canino.</span></li>
+      </ul>
+      <p class="lede">Desde junio de 2026 hay alivio para estratos 1 a 3, micro y pequeñas empresas, y entidades públicas de categorías menores. REDSEG no cotiza por debajo de ese piso.</p>
+    </section>
+
+    <section class="section" id="talento" aria-labelledby="talento-title">
+      <div class="contact-grid">
+        <div>
+          <p class="kicker">Trabaje con nosotros</p>
+          <h2 id="talento-title">El puesto pide credencial vigente.</h2>
+          <p class="lede">La postulación exige curso de vigilancia actualizado, expedido por una escuela avalada por la Superintendencia.</p>
+          <ul class="laws laws--plain">
+            <li><strong>Curso vigente</strong><span>Escuela avalada. Sin esa credencial el formulario no sigue.</span></li>
+            <li><strong>Examen psicofísico</strong><span>Al día, como lo exige el oficio.</span></li>
+            <li><strong>Antecedentes</strong><span>Judiciales limpios.</span></li>
+          </ul>
+        </div>
+        <div class="form-card">
+          <form id="postulacion" novalidate>
+            <div class="form-grid">
+              <label class="field">
+                <span>Nombre</span>
+                <input name="nombre" autocomplete="name" required>
+                <p class="err"></p>
+              </label>
+              <label class="field">
+                <span>Teléfono</span>
+                <input name="telefono" type="tel" autocomplete="tel" inputmode="tel" required>
+                <p class="err"></p>
+              </label>
+              <label class="field field--full">
+                <span>Correo</span>
+                <input name="correo" type="email" autocomplete="email" required>
+                <p class="err"></p>
+              </label>
+              <label class="field field--full">
+                <span>Escuela y curso vigente</span>
+                <input name="curso" required placeholder="Escuela avalada y fecha del curso">
+                <p class="err"></p>
+              </label>
+              <label class="field field--full field--check">
+                <input type="checkbox" name="psicofisico" required>
+                <span>Declaro examen psicofísico al día y antecedentes judiciales limpios.</span>
+                <p class="err"></p>
+              </label>
+              <label class="field field--full field--check">
+                <input type="checkbox" name="datos" required>
+                <span>Acepto el tratamiento de mis datos, Ley 1581 de 2012, solo para esta postulación. <a href="#datos">Ver aviso.</a></span>
+                <p class="err"></p>
+              </label>
+            </div>
+            <button class="btn btn--primary" type="submit">Enviar postulación</button>
+            <p class="fine">Al enviar, se abre su correo con la postulación lista para el buzón de REDSEG.</p>
+          </form>
+          <div class="success" id="postulacion-success" tabindex="-1">
+            <h3>Listo. Su correo debería abrirse.</h3>
+            <p>La postulación va al buzón de REDSEG. Si no se abrió, copie el texto y envíelo.</p>
+            <pre id="postulacion-summary"></pre>
+            <button class="btn btn--ghost" type="button" id="copy-postulacion">Copiar texto</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section desk" id="contacto">
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="kicker part">Contacto</p>
+          <h2 class="part">Cuéntenos qué hay que cuidar.</h2>
+          <p class="lede part">Un administrador, un gerente o un dueño de negocio. Si tiene un puesto que cubrir, escríbanos hoy.</p>
+          <ol class="steps">
+            <li class="part"><b>01</b><span>Cuéntenos el puesto.</span></li>
+            <li class="part"><b>02</b><span>Armamos el esquema.</span></li>
+            <li class="part"><b>03</b><span>Le enviamos la cotización.</span></li>
+          </ol>
+        </div>
+        <div class="form-card">
+          <form id="cotizacion" novalidate>
+            <div class="form-grid">
+              <label class="field">
+                <span>Nombre</span>
+                <input name="nombre" autocomplete="name" required>
+                <p class="err"></p>
+              </label>
+              <label class="field">
+                <span>Empresa</span>
+                <input name="empresa" autocomplete="organization">
+                <p class="err"></p>
+              </label>
+              <label class="field">
+                <span>Teléfono</span>
+                <input name="telefono" type="tel" autocomplete="tel" inputmode="tel" required>
+                <p class="err"></p>
+              </label>
+              <label class="field">
+                <span>Correo</span>
+                <input name="correo" type="email" autocomplete="email" required>
+                <p class="err"></p>
+              </label>
+              <label class="field field--full">
+                <span>Qué hay que cuidar</span>
+                <select name="necesidad" required>
+                  <option value="">Seleccione</option>
+                  <option>Conjunto residencial</option>
+                  <option>Edificio corporativo</option>
+                  <option>Bodega y logística</option>
+                  <option>Comercio</option>
+                  <option>Escolta o traslado</option>
+                  <option>Vigilancia canina</option>
+                  <option>Otro puesto</option>
+                </select>
+                <p class="err"></p>
+              </label>
+              <label class="field field--full">
+                <span>Mensaje</span>
+                <textarea name="mensaje" placeholder="Turnos, accesos, lo que no puede quedar solo."></textarea>
+                <p class="err"></p>
+              </label>
+              <label class="field field--full field--check">
+                <input type="checkbox" name="datos" required>
+                <span>Acepto el tratamiento de mis datos, Ley 1581 de 2012, solo para esta cotización. <a href="#datos">Ver aviso.</a></span>
+                <p class="err"></p>
+              </label>
+            </div>
+            <button class="btn btn--primary" type="submit">Solicitar cotización</button>
+            <p class="fine">La cotización respeta la tarifa mínima legal. Al enviar, se abre su correo con el mensaje listo para el buzón comercial de REDSEG.</p>
+          </form>
+          <div class="success" id="form-success" tabindex="-1">
+            <span class="check" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="22"/><path d="M14 25l6 6 14-14"/></svg>
+            </span>
+            <h3>Listo. Su correo debería abrirse.</h3>
+            <p>El mensaje va dirigido al buzón comercial de REDSEG. Si no se abrió, copie el texto y envíelo.</p>
+            <pre id="form-summary"></pre>
+            <button class="btn btn--ghost" type="button" id="copy-msg">Copiar texto</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="close-cta" aria-label="Cierre">
+      <div class="alert-line" aria-hidden="true"><i></i></div>
+      <h2>Listo para cuidar lo que no puede quedar solo.</h2>
+      <p>Hablemos hoy.</p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href="#contacto">Solicitar cotización</a>
+        <a class="btn btn--ghost" href="#contacto">Atención 24/7</a>
+        <a class="btn btn--ghost" id="wa-line" href="#contacto">Chat por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="license" id="resolucion">Resolución de funcionamiento. Superintendencia de Vigilancia y Seguridad Privada. El número y el alcance, nacional o regional, se publican en esta línea cuando la firma los entregue.</p>
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="#main">
+          <img src="assets/logo.jpg" width="110" height="126" alt="">
+          <span>
+            <span class="brand__name">REDSEG</span>
+            <span class="brand__slogan">Vigilancia que protege lo que importa</span>
+          </span>
+        </a>
+      </div>
+      <div>
+        <p class="footer-label">Servicios</p>
+        <ul>
+          <li><a href="#servicios">Vigilancia fija y móvil</a></li>
+          <li><a href="#servicios">Medios tecnológicos</a></li>
+          <li><a href="#servicios">Escoltas</a></li>
+          <li><a href="#servicios">Vigilancia canina</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-label">Firma</p>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#marco">Marco legal</a></li>
+          <li><a href="#tarifas">Tarifa mínima</a></li>
+          <li><a href="#talento">Trabaje</a></li>
+          <li><a href="#contacto">Contacto 24/7</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__base">
+      <p>© 2026 REDSEG. Empresa de vigilancia.</p>
+      <p id="datos">Aviso de datos. Ley 1581 de 2012. Los formularios recogen nombre, teléfono y correo para cotizar o postular. REDSEG los usa solo para eso. Escriba a comercial@redseg.com para conocer, actualizar o suprimir sus datos.</p>
+      <p>comercial@redseg.com</p>
+    </div>
+  </footer>
+
+  <a class="wa" id="wa" href="#contacto" aria-label="Ir a contacto por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83c0 1.74.46 3.44 1.34 4.94L2 22l5.39-1.4a10 10 0 0 0 4.65 1.18h.01c5.46 0 9.89-4.4 9.89-9.84C21.94 6.4 17.5 2 12.04 2zm5.76 14.02c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.12.1-1.81-.11-.41-.13-.95-.31-1.63-.61-2.87-1.24-4.74-4.13-4.88-4.32-.14-.19-1.16-1.54-1.16-2.94s.73-2.08 1-2.37c.24-.27.64-.39 1.02-.39h.3c.24 0 .36.02.52.4.2.47.67 1.63.73 1.75.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.24.25-.1.48.14.23.62 1.02 1.33 1.66.92.82 1.69 1.07 1.93 1.19.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.26z"/></svg>
+  </a>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
