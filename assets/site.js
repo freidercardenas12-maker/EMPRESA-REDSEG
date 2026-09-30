@@ -4,10 +4,6 @@ const REDSEG_MAIL = "comercial@redseg.com";
 const REDSEG_WA = "";
 
 const GATES = [
-  "(max-width: 720px)",
-  "(orientation: portrait) and (max-width: 1024px)",
-  "(orientation: portrait) and (pointer: coarse)",
-  "(orientation: landscape) and (pointer: coarse) and (max-height: 560px)",
   "(prefers-reduced-motion: reduce)"
 ];
 
@@ -226,9 +222,15 @@ function initHeroOnce() {
     pendingTime = null;
     stage.classList.add("video-failed");
   });
-  video.addEventListener("loadedmetadata", () => {
+  video.addEventListener("loadeddata", () => {
     stage.classList.add("video-ready");
-    onScroll();
+    const kick = video.play();
+    const settle = () => {
+      video.pause();
+      onScroll();
+    };
+    if (kick && typeof kick.then === "function") kick.then(settle).catch(settle);
+    else settle();
   }, { once: true });
   fetch("assets/hero-scrub.mp4")
     .then((res) => {
@@ -624,7 +626,7 @@ function setupImpact() {
   line.append(sr, visual);
   const spans = [...visual.querySelectorAll(".word")];
   const shield = section.querySelector(".impact-draw");
-  const narrow = () => matchMedia("(max-width: 720px), (prefers-reduced-motion: reduce)").matches;
+  const narrow = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
   const render = () => {
     if (narrow()) {
       spans.forEach((w) => {

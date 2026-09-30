@@ -1045,11 +1045,7 @@ h2 {
   .brand__slogan, .live--header { display: none; }
 }
 
-@media (max-width: 720px),
-       (orientation: portrait) and (max-width: 1024px),
-       (orientation: portrait) and (pointer: coarse),
-       (orientation: landscape) and (pointer: coarse) and (max-height: 560px),
-       (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   .hero { height: auto; min-height: 100vh; }
   .stage { position: relative; height: auto; min-height: 100svh; }
   .bg-video { display: none !important; }
@@ -2640,6 +2636,32 @@ body::before {
 
 @media (max-width: 720px) {
   .rates { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) and (prefers-reduced-motion: no-preference) {
+  .stage { height: 100dvh; }
+  .hero { height: 560dvh; }
+  .band { padding: calc(var(--header) + 2.5vh) var(--pad) 7vh; }
+  .band--left .band__inner { max-width: 12ch; }
+  .band--left .hero-title {
+    font-size: clamp(2.8rem, 13vw, 4.1rem);
+    line-height: 0.9;
+    max-width: 10ch;
+  }
+  .band--bottom .hero-title,
+  .band--top .hero-title,
+  .band--settle .hero-title {
+    font-size: clamp(2.15rem, 9.2vw, 3.15rem);
+    max-width: 14ch;
+  }
+  .sub { font-size: 1rem; }
+  .impact { height: 180vh; }
+  .impact__pin {
+    position: sticky;
+    min-height: 100dvh;
+    padding: calc(var(--header) + 1.4rem) 1.25rem 2rem;
+  }
+  .impact__line { font-size: clamp(2.15rem, 9vw, 2.8rem); max-width: 14ch; }
 }
 
 @media (min-width: 721px) {
