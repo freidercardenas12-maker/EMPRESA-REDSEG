@@ -29,6 +29,7 @@ let target = 0;
 let shown = 0;
 let rafId = null;
 let lastTick = 0;
+let seekTimer = 0;
 let loadK = 0;
 let loadStart = 0;
 
@@ -153,10 +154,12 @@ function updateCaptions(p) {
 function scrubTime(p) {
   const duration = video.duration || 0;
   if (!duration) return 0;
-  const holdP = 0.04;
-  const holdT = Math.min(2.5, duration * 0.32);
+  const holdP = 0.06;
+  const holdT = Math.min(2.35, duration * 0.3);
   if (p <= holdP) return (p / holdP) * holdT;
-  return holdT + ((p - holdP) / (1 - holdP)) * (duration - holdT);
+  const u = (p - holdP) / (1 - holdP);
+  const eased = 1 - Math.pow(1 - u, 1.2);
+  return holdT + eased * (duration - holdT);
 }
 
 function requestSeek(t) {
@@ -166,13 +169,20 @@ function requestSeek(t) {
     pendingTime = clamped;
     return;
   }
-  if (Math.abs(clamped - lastSeek) < 0.008) return;
+  if (Math.abs(clamped - lastSeek) < 0.004) return;
   seekBusy = true;
   lastSeek = clamped;
+  clearTimeout(seekTimer);
+  seekTimer = setTimeout(() => {
+    if (!seekBusy) return;
+    seekBusy = false;
+    onSeeked();
+  }, 120);
   video.currentTime = clamped;
 }
 
 function onSeeked() {
+  clearTimeout(seekTimer);
   seekBusy = false;
   if (pendingTime !== null) {
     const t = pendingTime;
@@ -184,7 +194,8 @@ function onSeeked() {
 function tick(now) {
   const dt = Math.min(100, now - (lastTick || now));
   lastTick = now;
-  const k = 0.46;
+  const gap = Math.abs(target - shown);
+  const k = gap > 0.06 ? 0.82 : 0.62;
   shown += (target - shown) * (1 - Math.pow(1 - k, dt / 16.667));
   if (Math.abs(target - shown) < 0.0005) {
     shown = target;

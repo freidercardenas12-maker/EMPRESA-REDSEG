@@ -291,7 +291,7 @@ body.nav-open { overflow: hidden; }
 
 .nav-cta { display: none; }
 
-.hero { height: 560vh; }
+.hero { height: 400vh; }
 
 .stage {
   position: sticky;
@@ -1777,7 +1777,7 @@ body::before {
 
 /* Empuje: la promesa, el águila dentro del servicio, la mesa de contacto y el cierre con el fotograma. */
 @media (min-width: 721px) and (prefers-reduced-motion: no-preference) {
-  .impact { height: 180vh; }
+  .impact { height: 140vh; }
 }
 
 .impact__pin {
@@ -2640,7 +2640,7 @@ body::before {
 
 @media (max-width: 720px) and (prefers-reduced-motion: no-preference) {
   .stage { height: 100dvh; }
-  .hero { height: 560dvh; }
+  .hero { height: 380dvh; }
   .band { padding: calc(var(--header) + 2.5vh) var(--pad) 7vh; }
   .band--left .band__inner { max-width: 12ch; }
   .band--left .hero-title {
@@ -2655,7 +2655,7 @@ body::before {
     max-width: 14ch;
   }
   .sub { font-size: 1rem; }
-  .impact { height: 180vh; }
+  .impact { height: 130vh; }
   .impact__pin {
     position: sticky;
     min-height: 100dvh;
